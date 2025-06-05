@@ -1,5 +1,7 @@
 # Laravel API-Only Starter (v12+)
 
+[![API CI](https://github.com/vijaysebastian/api-app/actions/workflows/laravel-ci.yml/badge.svg)](https://github.com/vijaysebastian/api-app/actions/workflows/laravel-ci.yml)
+
 A clean, Laravel 12.x API-only application with:
 - Sanctum authentication
 - JSON-only requests and responses
@@ -42,5 +44,4 @@ php artisan key:generate
 
 # Optional: configure DB in .env
 php artisan migrate
-php artisan db:seed # if you have seeders
-```
+php artisan db:seed # if

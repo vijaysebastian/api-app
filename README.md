@@ -35,8 +35,8 @@ A clean, Laravel 12.x API-only application with:
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/your-username/your-api-project.git
-cd your-api-project
+git clone https://github.com/vijaysebastian/api-app.git
+cd api-app
 
 composer install
 cp .env.example .env
@@ -44,4 +44,7 @@ php artisan key:generate
 
 # Optional: configure DB in .env
 php artisan migrate
-php artisan db:seed # if
+
+#Feature tests
+php artisan test
+```

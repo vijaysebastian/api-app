@@ -19,5 +19,9 @@ class RegisterMiddleware
             'auth:sanctum' => EnsureFrontendRequestsAreStateful::class,
             'verified' => EnsureEmailIsVerified::class,
         ]);
+        $middleware->group('api', [
+            'throttle:api',
+            \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        ]);
     }
 }

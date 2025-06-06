@@ -45,6 +45,16 @@ php artisan key:generate
 # Optional: configure DB in .env
 php artisan migrate
 
-#Feature tests
+# Feature tests
 php artisan test
+
+# access the API 
+curl -X POST http://localhost:8000/api/register \
+-H "Content-Type: application/json" \
+-d '{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "secret123"
+}' \
+-H "Accept: application/json"
 ```
